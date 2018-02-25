@@ -6,5 +6,4 @@ Universidade de Aveiro
 Pedro Teixeira
 
 ----------------
-Algoritmos e Complexidade 2017
-  - Aula 1: Análise da Complexidade de Algoritmos
+  - Aula 01: Análise da Complexidade de Algoritmos
