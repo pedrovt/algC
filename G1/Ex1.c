@@ -1,8 +1,7 @@
 /*
  * Ex1
- *
- *  Created on: Feb 19, 2018
- *      Author: Pedro Teixeira, 84715, MIECT
+ * Algorithms And Complexity
+ * Author: Pedro Teixeira, 84715, MIECT
  */
 
 #include <stdio.h>
@@ -13,7 +12,7 @@ int f3(int n);
 
 int COUNT = 0;
 
-int mainl (void) {
+int main(void) {
 
 	int num, a = 0;
 

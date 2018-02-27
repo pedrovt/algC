@@ -1,13 +1,12 @@
 /*
  * exemplo2.c
- *
- *  Created on: Feb 20, 2018
- *      Author: Pedro
+ * Algorithms And Complexity
+ * Author: Pedro Teixeira, 84715, MIECT
  */
 
 # include <stdio.h>
 
-int mainn(void) {
+int main(void) {
 	char name[10];
 
 	puts("What is your name?");

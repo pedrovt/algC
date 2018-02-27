@@ -1,12 +1,11 @@
 /*
  * exemplo1.c
- *
- *  Created on: Feb 20, 2018
- *      Author: Pedro
+ * Algorithms And Complexity
+ * Author: Pedro Teixeira, 84715, MIECT
  */
 
 
-int maindd(void) {
+int main(void) {
 	//
 	return 0;
 }

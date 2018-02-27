@@ -1,14 +1,13 @@
 /*
  * Ex2_Armstrong
- *
- *  Created on: Feb 20, 2018
- *      Author: Pedro Teixeira, 84715, MIECT
+ * Algorithms And Complexity
+ * Author: Pedro Teixeira, 84715, MIECT
  */
 
 #include <stdio.h>
 
 
-int maindds(void) {
+int main(void) {
 	int countMults = 0;
 
 	// Pre-Calculates the cubes of the 10 different digits

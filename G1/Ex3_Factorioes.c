@@ -1,12 +1,10 @@
 /*
  * Ex3_Factorioes
- *
- *  Created on: Feb 20, 2018
- *      Author: Pedro Teixeira, 84715, MIECT
+ * Algorithms And Complexity
+ * Author: Pedro Teixeira, 84715, MIECT
  */
 
 # include <stdio.h>
-
 
 int main(void) {
 	int countMults = 0;
@@ -45,6 +43,4 @@ int main(void) {
 			}
 		}
 	}
-
-
 }
