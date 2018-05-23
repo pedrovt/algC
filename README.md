@@ -13,3 +13,7 @@ pedrovt 2018
   - Aula 06: Tipos de Dados Abstratos (Sequência de Inteiros baseada numa Doubly Linked List)
   - Aula 07: Análise da complexidade de algoritmos recursivos (Algoritmos simples)
   - Aula 08: Análise da complexidade de algoritmos recursivos (Número de Schröder)
+  - Aula 09: Stacks & Queues
+  - Aula 10: Binary Search Trees
+  - Aula 11: Priority Queues
+  - Aula 12: Dígrafos
