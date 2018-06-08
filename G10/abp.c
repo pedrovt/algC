@@ -602,7 +602,7 @@ void ABPDeleteMin (PtABPNode *proot) {
 
 void ABPDeleteMax (PtABPNode *proot) { 
 	// Uma função repetitiva para apagar o elemento máximo armazenado na árvore.
-	/* I had a double free or corruption (fasttop) error with the following implementation I wasn't able to solve, so I implemented a recursive solution similiar to the DeleteMin function.
+	// I had a double free or corruption (fasttop) error with the following implementation I wasn't able to solve, so I implemented a recursive solution similiar to the DeleteMin function.
 	
 	PtABPNode node = *proot;
 
@@ -614,56 +614,29 @@ void ABPDeleteMax (PtABPNode *proot) {
 	}
 
 	// If root is the biggest --> we need to change the tree root
-	if (node->PtRight == NULL)
+	if (node -> PtRight == NULL)
 	{
 		PtABPNode max = node;
-		*proot = node->PtLeft;
+		*proot = node -> PtLeft;
 		ABPNodeDestroy(&max);
 		Error = OK;
-		//printf("\nRoot is the biggest!");
 		return;
 	}
 
 	// If root is not the biggest, iterate the tree until finding the max node
-	printf("\nIterating list. Starting in node %d", (node->Elem));
+	PtABPNode beforeMax = NULL;
+	PtABPNode max = node;
+
+	while (max -> PtRight != NULL) {		// ATTENTION
+		beforeMax = max;
+		max = max -> PtRight;
+	}
 
 	// Found max node
-	printf("\nFound max node %d\n\n", (node->Elem));
-	PtABPNode max = node;
-	node = node->PtLeft;
+	beforeMax ->PtRight = max->PtLeft;
 	ABPNodeDestroy(&max);
-	printf("\nDestroyed node ");
 	Error = OK;
-
-	*/
-	PtABPNode node = (*proot);
-
-	// Verify if tree is empty
-	if (node == NULL)
-	{
-		Error = ABP_EMPTY;
-		return;
-	}
-
-	// Max is root --> we need to update the tree root
-	if (node->PtRight == NULL) {
-		*proot = node-> PtLeft;
-		ABPNodeDestroy(&node);
-		Error = OK;
-		return;
-	}
-
-	// Found the max node
-	if (node -> PtRight == NULL) {
-		PtABPNode maxNode = *proot;
-		node = (node) -> PtLeft;
-		ABPNodeDestroy(&maxNode);
-		Error = OK;
-	}
-	else
-	{
-		ABPDeleteMax(&(*proot) -> PtRight);
-	}
+	
 }
 
 PtABPNode ABPFloorValue (PtABPNode proot, int pvalue) { 
